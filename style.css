@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+image.pngbody {
+    margin: 0;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.left-login >h1 {
+    color:aquamarine;
+    
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056 ;
+}
+
+.card-login > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+    
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color:#f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline:none ;
+    box-sizing: border-box;
+
+}
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.link-senha {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-senha:hover {
+    text-decoration: underline;
+    color: #aaa;
+}
+
+.link-senha:nth-child(even) {
+    margin: 16px 0;
+}
+
+.bnt-login{
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:4px;
+
+}
+
+@media (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .right-login {
+        width: 90vw;
+    }
+    .card-login {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .right-login {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 2000px) {
+    .right-login {
+        width: 20vw;
+    }
+}
+
+
